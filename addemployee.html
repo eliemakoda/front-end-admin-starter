@@ -370,11 +370,10 @@
                                     <span key="t-crypto">Employees</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="./addemployee.html" key="t-wallet"> Add Employee </a></li>
-                                    <li><a href="employeelist.html" key="t-buy">Employee List </a></li>
+                                    <li><a href="crypto-wallet.html" key="t-wallet"> Add Employee </a></li>
+                                    <li><a href="crypto-buy-sell.html" key="t-buy">Employee List </a></li>
                                 </ul>
                             </li> 
-                            
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="fas fa-user-md"></i>
@@ -394,7 +393,6 @@
             <!-- Left Sidebar End -->
 
             
-
             <!-- ============================================================== -->
             <!-- Start right Content here -->
             <!-- ============================================================== -->
@@ -407,12 +405,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0 font-size-18">Add Supplier</h4>
+                                    <h4 class="mb-sm-0 font-size-18">Create New</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
-                                            <li class="breadcrumb-item active">Add Product</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Project</a></li>
+                                            <li class="breadcrumb-item active">Create New</li>
                                         </ol>
                                     </div>
 
@@ -422,98 +420,65 @@
                         <!-- end page title -->
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-body">
-        
-                                        <h4 class="card-title">Basic Information</h4>
-                                        <p class="card-title-desc">Fill all information below</p>
-        
+                                        <h4 class="card-title mb-4">Create New Project</h4>
                                         <form>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="mb-3">
-                                                        <label for="productname"> Name</label>
-                                                        <input id="productname" name="productname" type="text" class="form-control" placeholder="Product Name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="manufacturername">Manufacturer Name</label>
-                                                        <input id="manufacturername" name="manufacturername" type="text" class="form-control" placeholder="Manufacturer Name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="manufacturerbrand">Manufacturer Brand</label>
-                                                        <input id="manufacturerbrand" name="manufacturerbrand" type="text" class="form-control" placeholder="Manufacturer Brand">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="price">Price</label>
-                                                        <input id="price" name="price" type="text" class="form-control" placeholder="Price">
-                                                    </div>
-                                                </div>
-        
-                                                <div class="col-sm-6">
-                                                    <div class="mb-3">
-                                                        <label class="control-label">Category</label>
-                                                        <select class="form-control select2">
-                                                            <option>Select</option>
-                                                            <option value="FA">Fashion</option>
-                                                            <option value="EL">Electronic</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="control-label">Features</label>
-        
-                                                        <select class="select2 form-control select2-multiple" multiple="multiple" data-placeholder="Choose ...">
-                                                            <option value="WI">Wireless</option>
-                                                            <option value="BE">Battery life</option>
-                                                            <option value="BA">Bass</option>
-                                                        </select>
-        
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="productdesc">Product Description</label>
-                                                        <textarea class="form-control" id="productdesc" rows="5" placeholder="Product Description"></textarea>
-                                                    </div>
-                                                    
+                                            <div class="row mb-4">
+                                                <label for="projectname" class="col-form-label col-lg-2">Project Name</label>
+                                                <div class="col-lg-10">
+                                                    <input id="projectname" name="projectname" type="text" class="form-control" placeholder="Enter Project Name...">
                                                 </div>
                                             </div>
-        
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <button type="submit" class="btn btn-primary waves-effect waves-light">Save Changes</button>
-                                                <button type="button" class="btn btn-secondary waves-effect waves-light">Cancel</button>
-                                            </div>
-                                        </form>
-        
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-3"> Images</h4>
-
-                                        <form action="https://themesbrand.com/" method="post" class="dropzone">
-                                            <div class="fallback">
-                                                <input name="file" type="file" multiple />
-                                            </div>
-            
-                                            <div class="dz-message needsclick">
-                                                <div class="mb-3">
-                                                    <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                            <div class="row mb-4">
+                                                <label for="projectdesc" class="col-form-label col-lg-2">Project Description</label>
+                                                <div class="col-lg-10">
+                                                    <textarea class="form-control" id="projectdesc" rows="3" placeholder="Enter Project Description..."></textarea>
                                                 </div>
-                                                
-                                                <h4>Upload your image here.</h4>
                                             </div>
-                                        </form>
-                                    </div>
 
-                                </div> <!-- end card-->
-        
-        
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <button type="submit" class="btn btn-primary waves-effect waves-light">Save Changes</button>
-                                                <button type="submit" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+                                            <div class="row mb-4">
+                                                <label class="col-form-label col-lg-2">Project Date</label>
+                                                <div class="col-lg-10">
+                                                    <div class="input-daterange input-group" id="project-date-inputgroup" data-provide="datepicker" data-date-format="dd M, yyyy"  data-date-container='#project-date-inputgroup' data-date-autoclose="true">
+                                                        <input type="text" class="form-control" placeholder="Start Date" name="start" />
+                                                        <input type="text" class="form-control" placeholder="End Date" name="end" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-4">
+                                                <label for="projectbudget" class="col-form-label col-lg-2">Budget</label>
+                                                <div class="col-lg-10">
+                                                    <input id="projectbudget" name="projectbudget" type="text" placeholder="Enter Project Budget..." class="form-control">
+                                                </div>
                                             </div>
                                         </form>
-        
+                                        <div class="row mb-4">
+                                            <label class="col-form-label col-lg-2">Attached Files</label>
+                                            <div class="col-lg-10">
+                                                <form action="https://themesbrand.com/" method="post" class="dropzone">
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" multiple />
+                                                    </div>
+                    
+                                                    <div class="dz-message needsclick">
+                                                        <div class="mb-3">
+                                                            <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                                        </div>
+                                                        
+                                                        <h4>Drop files here or click to upload.</h4>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-lg-10">
+                                                <button type="submit" class="btn btn-primary">Create Project</button>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -612,19 +577,15 @@
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- select 2 plugin -->
-        <script src="assets/libs/select2/js/select2.min.js"></script>
+        <!-- bootstrap datepicker -->
+        <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 
         <!-- dropzone plugin -->
         <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
 
-        <!-- init js -->
-        <script src="assets/js/pages/ecommerce-select2.init.js"></script>
-
-        <!-- App js -->
         <script src="assets/js/app.js"></script>
 
     </body>
 
-<!-- Mirrored from themesbrand.com/skote-cakephp/layouts/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jan 2024 13:10:30 GMT -->
+<!-- Mirrored from themesbrand.com/skote-cakephp/layouts/projects-create.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jan 2024 13:11:01 GMT -->
 </html>
